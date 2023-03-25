@@ -22,7 +22,7 @@ productRouter.route('/')
 .post(cors.corsWithOptions, authenticate.verifyUser, authenticate.verifyAdmin, (req, res, next) => {
   Product.create(req.body)
   .then((product) => {
-      console.log('Leader Created', product);
+      console.log('Product Created', product);
       res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
       res.json(product);

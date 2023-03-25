@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-// const mongoose= require('mongoose');
+const mongoose= require('mongoose');
 var authenticate =  require('../authenticate');
 const cors = require('./cors');
 const Order= require('../models/orders');
